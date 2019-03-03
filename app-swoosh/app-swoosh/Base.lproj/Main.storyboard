@@ -50,6 +50,9 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     <color key="titleShadowColor" red="0.2901960784" green="0.2901960784" blue="0.2901960784" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
+                                <connections>
+                                    <segue destination="78c-1a-Y0e" kind="show" id="wgU-le-WvR"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="GO ALL IN" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hKc-i1-CDx">
                                 <rect key="frame" x="77" y="259" width="260" height="71.5"/>
@@ -177,6 +180,20 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     <color key="titleShadowColor" red="0.2901960784" green="0.2901960784" blue="0.2901960784" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
+                                <connections>
+                                    <segue destination="1SV-2f-lkC" kind="show" id="ab6-8t-9ig"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qWz-06-u73">
+                                <rect key="frame" x="20" y="74" width="29" height="24"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="24" id="0lz-Js-uGy"/>
+                                    <constraint firstAttribute="width" constant="29" id="72K-pm-2l3"/>
+                                </constraints>
+                                <state key="normal" image="backButton"/>
+                                <connections>
+                                    <segue destination="SpJ-Yh-3JP" kind="unwind" unwindAction="unwindFromSkillVCWithUnwindSegue:" id="RZb-bg-nji"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -187,9 +204,11 @@
                             <constraint firstItem="KZs-Nu-6tN" firstAttribute="trailing" secondItem="RNf-G8-UL1" secondAttribute="trailing" constant="20" id="GxB-AH-DB8"/>
                             <constraint firstItem="QVr-M3-fTS" firstAttribute="top" secondItem="KZs-Nu-6tN" secondAttribute="top" constant="42" id="HfV-KY-Pqj"/>
                             <constraint firstAttribute="bottom" secondItem="pox-bR-TOa" secondAttribute="bottom" id="JMe-sE-EFJ"/>
+                            <constraint firstItem="qWz-06-u73" firstAttribute="leading" secondItem="KZs-Nu-6tN" secondAttribute="leading" constant="20" id="U8G-cQ-FQL"/>
                             <constraint firstItem="RNf-G8-UL1" firstAttribute="bottom" secondItem="KZs-Nu-6tN" secondAttribute="bottom" id="V5s-pK-sfD"/>
                             <constraint firstItem="1Bn-3t-nJS" firstAttribute="leading" secondItem="KZs-Nu-6tN" secondAttribute="leading" constant="20" id="ZxR-wd-m41"/>
                             <constraint firstItem="KZs-Nu-6tN" firstAttribute="trailing" secondItem="1Bn-3t-nJS" secondAttribute="trailing" constant="20" id="e0q-cg-w3j"/>
+                            <constraint firstItem="qWz-06-u73" firstAttribute="top" secondItem="KZs-Nu-6tN" secondAttribute="top" constant="30" id="eYI-Mf-9xh"/>
                             <constraint firstItem="pox-bR-TOa" firstAttribute="top" secondItem="KZs-Nu-6tN" secondAttribute="top" id="fHQ-mH-YTD"/>
                             <constraint firstItem="pox-bR-TOa" firstAttribute="trailing" secondItem="KZs-Nu-6tN" secondAttribute="trailing" id="gjN-uK-e3C"/>
                             <constraint firstItem="pox-bR-TOa" firstAttribute="leading" secondItem="KZs-Nu-6tN" secondAttribute="leading" id="oQU-ZI-pjL"/>
@@ -199,6 +218,7 @@
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Fee-B5-gPn" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="SpJ-Yh-3JP" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="866.66666666666674" y="114.50892857142857"/>
         </scene>
@@ -297,6 +317,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="backButton" width="29" height="24"/>
         <image name="beginnerBallerBG" width="414" height="736"/>
         <image name="desiredLeagueBG" width="414" height="736"/>
         <image name="swooshLogo" width="119" height="20"/>
